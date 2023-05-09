@@ -6,6 +6,7 @@ import org.openqa.selenium.Keys;
 import techproed.pages.AmazonPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class AmazonStepDefinition {
     AmazonPage amazonPage;
@@ -41,5 +42,10 @@ public class AmazonStepDefinition {
     public void arama_kutusunda_sql_aratir() {
         amazonPage = new AmazonPage();
         amazonPage.aramaKutusu.sendKeys("sql", Keys.ENTER);
+    }
+
+    @And("Kullanici {int} saniye bekler")
+    public void kullaniciSaniyeBekler(int saniye) {
+        ReusableMethods.bekle(saniye);
     }
 }

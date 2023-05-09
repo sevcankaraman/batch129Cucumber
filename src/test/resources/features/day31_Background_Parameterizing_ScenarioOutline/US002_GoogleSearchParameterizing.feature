@@ -8,6 +8,12 @@ Feature: Google_Search
     # tırnak için değiştirdiğimizde arama kısmında baska bır arama yaptrımıs oluyoruz
     #bu kısım action kısmıdır.sadece java aratmak için
 
+  #Feature file'da birden fazla ürün aratmak için her ürün için yeni bir method oluşturmak gerekir.
+  #Dolayısıyla stepdefinition class'ında çok fazla method oluşturmuş oluruz.
+  #Tek bir parametreli method oluşturup bunun üstesinden gelebiliriz.
+    #Bunun için feature file'da aratmak istediğim metni " " tırnak içinde yazarsak stepdefinition class'ında bize
+  #parametreli method oluşturur. Böylece bu methodu kullanarak istediğimiz kadar metin aratabiliriz
+
   Scenario: TC01_Java_Search
     When kullanici googleda "Java" aratir
     Then title'in "Java" icerdigini dogrular

@@ -7,6 +7,8 @@ Feature: US001_Amazon_Sayfasinda_Urun_Aratma
   Scenario: TC01_Amazon_sayfasinda_Selenium_Aratma
     When arama_kutusunda_Selenium_aratir
     Then sayfayi_kapatir
+    And Kullanici 3 saniye bekler
+
 
   Scenario: TC02_Amazon_sayfasinda_Java_Aratma
     When arama_kutusunda_java_aratir
