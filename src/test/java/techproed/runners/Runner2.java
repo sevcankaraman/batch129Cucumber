@@ -1,4 +1,3 @@
-
 package techproed.runners;
 
 import io.cucumber.junit.Cucumber;
@@ -18,8 +17,7 @@ senaryoyu çalıştırabiliriz
                 "pretty",//plugin parametresi ile pretty ifadesi kullanılırsa konsolda scenario'lar ile bilgi gösterir
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "junit:target/xml-report/cucumber.xml"
         },
         monochrome = false,//pretty ifadesinden sonra monochrome = true kullanırsak senerio adımlarını tekrenk olark siyah gösterir
         //monochrome = false kullanırsak renkli gösterir
@@ -40,7 +38,5 @@ tags ====> çalıştırmak istediğin grubu yaz
 dryRun = true  ===> Missing Strep Definitions(Eksik) tespiti için kullanılır. Testi çalıştırmaz.
  */
 
-public class Runner {
+public class Runner2 {
 }
-
-

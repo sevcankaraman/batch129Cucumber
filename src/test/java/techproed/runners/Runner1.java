@@ -16,10 +16,9 @@ senaryoyu çalıştırabiliriz
 @CucumberOptions(
         plugin = {
                 "pretty",//plugin parametresi ile pretty ifadesi kullanılırsa konsolda scenario'lar ile bilgi gösterir
-                "html:target/default-cucumber-reports.html",
-                "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "html:target/default-cucumber-reports1.html",
+                "json:target/json-reports/cucumber1.json",
+                "junit:target/xml-report/cucumber.xml"
         },
         monochrome = false,//pretty ifadesinden sonra monochrome = true kullanırsak senerio adımlarını tekrenk olark siyah gösterir
         //monochrome = false kullanırsak renkli gösterir
@@ -27,7 +26,7 @@ senaryoyu çalıştırabiliriz
         features = "src/test/resources/features",
         glue = {"techproed/stepDefinitions"},//Bu parametre ile kodlarımızı yazdığımız stepDefinition
         //class'ının packege'ını belirtiriz
-        tags = "@techpro3",
+        tags = "@techpro1",
         dryRun = false//dryRun=false Test adımlarını kontrol eder ve browser'ı çalıştırır
         //dryRun=True Test adımlarını sadece kontrol eder
         //default olarak false'tur
@@ -40,7 +39,5 @@ tags ====> çalıştırmak istediğin grubu yaz
 dryRun = true  ===> Missing Strep Definitions(Eksik) tespiti için kullanılır. Testi çalıştırmaz.
  */
 
-public class Runner {
+public class Runner1 {
 }
-
-
